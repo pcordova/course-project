@@ -100,3 +100,8 @@ The data set contains 1 file: "*meanTidyData.csv*"
 | freqBodyBodyAccJerkMagStd   |tags as descrived above             |
 | freqBodyBodyGyroMagStd      |tags as descrived above             |
 | freqBodyBodyGyroJerkMagStd  |tags as descrived above             |
+
+------------------------------------------------------------------------
+\
+\
+
