@@ -15,6 +15,8 @@ There was a zipped file, downloaded from: [Link to Dataset](https://d396qusza40o
 
 The assignment consisted in merge data sets, extract relevant columns, use more descriptive names in rows and columns, and create a new data set containing the means of the original values.
 
+The file "run_analysis.R" contains the code to do the needed work. Code is commented for better understanding
+
 ------------------------------------------------------------------------
 
 ### File Description:
