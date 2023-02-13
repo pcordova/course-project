@@ -17,7 +17,7 @@ The assignment consisted in merge data sets, extract relevant columns, use more 
 
 ------------------------------------------------------------------------
 
-#### File Description:
+### File Description:
 
 The data set contains 1 file: "*meanTidyData.csv*"
 
@@ -28,7 +28,7 @@ The data set contains 1 file: "*meanTidyData.csv*"
 
 ------------------------------------------------------------------------
 
-#### Variables Description:
+### Variables Description:
 
 | Variable name               | Description |
 |-----------------------------|-------------|
