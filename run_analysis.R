@@ -64,5 +64,7 @@ meanTidyData <- tidyData %>%
             group_by(subject,activity) %>%
             summarise(across(everything(), mean), .groups = "keep") # Fifth task of the project. All done!
  
+write.csv(meanTidyData,file="./data/meanTidyData.csv")
+
 # Generate some friendly output
-cat('Results are stored in tables: "tidyData" and "meanTidyData"')
+cat('Results are stored in file "./data/meanTidyData.csv"')
