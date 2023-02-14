@@ -7,5 +7,5 @@ The relevant files contained in this repository are:
 
 - README.md (this file)
 - CodeBook.md (file describing data, variables, etc.)
-- run_analysis.R (file containing R code)
+- run_analysis.R (file containing **commented** R code)
 - meanTidyData.csv (the assignment resulting file)
