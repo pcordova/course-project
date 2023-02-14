@@ -66,9 +66,9 @@ The data set contains 1 file: "*meanTidyData.csv*"
 | freqBodyGyroMean.Y          |tags as descrived above             |
 | freqBodyGyroMean.Z          |tags as descrived above             |
 | freqBodyAccMagMean          |tags as descrived above             |
-| freqBodyBodyAccJerkMagMean  |tags as descrived above             |
-| freqBodyBodyGyroMagMean     |tags as descrived above             |
-| freqBodyBodyGyroJerkMagMean |tags as descrived above             |
+| freqBodyAccJerkMagMean.     |tags as descrived above             |
+| freqBodyGyroMagMean         |tags as descrived above             |
+| freqBodyGyroJerkMagMean     |tags as descrived above             |
 | timeBodyAccStd.X            |same as above plus Std = standard deviation             |
 | timeBodyAccStd.Y            |tags as descrived above             |
 | timeBodyAccStd.Z            |tags as descrived above             |
@@ -99,9 +99,9 @@ The data set contains 1 file: "*meanTidyData.csv*"
 | freqBodyGyroStd.Y           |tags as descrived above             |
 | freqBodyGyroStd.Z           |tags as descrived above             |
 | freqBodyAccMagStd           |tags as descrived above             |
-| freqBodyBodyAccJerkMagStd   |tags as descrived above             |
-| freqBodyBodyGyroMagStd      |tags as descrived above             |
-| freqBodyBodyGyroJerkMagStd  |tags as descrived above             |
+| freqBodyAccJerkMagStd       |tags as descrived above             |
+| freqBodyGyroMagStd          |tags as descrived above             |
+| freqBodyGyroJerkMagStd      |tags as descrived above             |
 
 ------------------------------------------------------------------------
 
