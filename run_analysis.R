@@ -35,6 +35,7 @@ depurated <- merged[,..msCols] # Second task of the project
 colNames <- as.vector(unlist(colNames[msCols,2]))
 colNames <- gsub("^t","time",colNames)
 colNames <- gsub("^f","freq",colNames)
+colNames <- gsub("BodyBody","Body",colNames)
 colNames <- gsub("-mean\\(\\)-","Mean.",colNames)
 colNames <- gsub("-mean\\(\\)","Mean",colNames)
 colNames <- gsub("-std\\(\\)-","Std.",colNames)
@@ -48,12 +49,12 @@ activityLabels <- fread("./data/UCI Har Dataset/activity_labels.txt")
 activityLabels$V2 <- gsub("ING_", "", activityLabels$V2) %>%tolower()
 
 # Bind all data objects
-tidyData <- cbind(subject = rbind(testSubjects, trainSubjects),
+tidyData <- cbind(subjectID = rbind(testSubjects, trainSubjects),
       activity = rbind(testLabels, trainLabels),
       depurated)
 
 # Final column names modification
-names(tidyData)[1:2] <- c("subject", "activity") # Fourth task of the project (part 2)
+names(tidyData)[1:2] <- c("subjectID", "activity") # Fourth task of the project (part 2)
 
 # Assign "activityLabels" to "tidyData" table
 tidyData$activity <- activityLabels$V2[tidyData$activity] # Third task of the project
@@ -61,10 +62,10 @@ tidyData$activity <- activityLabels$V2[tidyData$activity] # Third task of the pr
 
 # Create a second data set to hold the averages
 meanTidyData <- tidyData %>%
-            group_by(subject,activity) %>%
+            group_by(subjectID,activity) %>%
             summarise(across(everything(), mean), .groups = "keep") # Fifth task of the project. All done!
  
-write.csv(meanTidyData,file="./data/meanTidyData.csv")
+write.table(meanTidyData,file="./data/meanTidyData.txt", row.name=FALSE)
 
 # Generate some friendly output
-cat('Results are stored in file "./data/meanTidyData.csv"')
+cat('Results are stored in file "./data/meanTidyData.txt"')
